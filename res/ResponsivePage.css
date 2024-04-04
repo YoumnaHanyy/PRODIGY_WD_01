@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    transition: background-color 0.3s ease;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    align-items: center;
+    padding: 10px 50px;
+    justify-content: space-between;
+    color: white;
+}
+
+.nav a {
+    text-decoration: none;
+    padding-left: 50px;
+    color: white;
+}
+
+.nav a:hover {
+    color: rgb(255, 161, 161);
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.flip {
+    animation: enterAndFlip 2s ease forwards;
+    transform-origin: right center;
+    height: 600px;
+    width: 550px;
+}
+
+.h {
+    color: white;
+    margin-top: -450px;
+    margin-left: 150px;
+    font-size: 3em;
+}
+
+.about{
+    width: 100%;
+    margin-top: 270px;
+  
+    align-items: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center center;
+    background-attachment: fixed;
+    background: url(https://www.beatsbydre.com/content/dam/beats/web/product/headphones/solo3-wireless/pdp/solo3-pdp-p05.jpg.large.1x.jpg) no-repeat;
+    background-size: cover; 
+    color: white;
+}
+.div1{
+margin-left: 800px;
+padding-top: 150px;
+}
+.technology{
+    width: 100%;
+    margin-top: px;
+    background-size: cover; 
+    color: white;
+    align-items: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center center;
+    background-attachment: fixed;
+    background: url(https://c4.wallpaperflare.com/wallpaper/875/390/515/beats-dr-dre-headphones-monster-wallpaper-preview.jpg)no-repeat;
+}
+.technology p{
+    margin-left: 800px;
+    padding-top: 200px;
+    font-size: 2em;
+}
+.technology h6{
+    padding-top: 50px;
+    font-size: 0.8em;
+    margin-left:800px ;
+}
+
+
+
+
+
+
+@keyframes enterAndFlip {
+    0% {
+        transform: translateX(100%) rotateY(90deg);
+    }
+    50% {
+        transform: translateX(0%) rotateY(90deg);
+    }
+    100% {
+        transform: translateX(0%) rotateY(0deg);
+    }
+}
